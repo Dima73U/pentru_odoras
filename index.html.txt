@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Pentru tine ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LOGIN -->
+  <div class="container" id="login">
+    <h1>Pentru tine, iubirea mea 💖</h1>
+
+    <p class="subtitle">
+      Unele lucruri nu sunt pentru toată lumea.<br>
+      Doar pentru tine.
+    </p>
+
+    <input type="password" id="password" placeholder="Parola noastră">
+    <button onclick="checkPassword()">Deschide 💌</button>
+
+    <p class="footer">
+      14 februarie 🌹
+    </p>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="container hidden" id="content">
+    <h1>Doar noi doi 💞</h1>
+
+    <p class="subtitle">
+      Aici este ceva creat din inimă.<br>
+      Exact așa cum te iubesc.
+    </p>
+
+    <div class="qr-box">
+      <img src="qr.png" alt="QR Code">
+    </div>
+
+    <p class="footer">
+      Te aleg pe tine. Mereu.
+    </p>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const parolaCorecta = "odoras";
+      const parola = document.getElementById("password").value;
+
+      if (parola === parolaCorecta) {
+        document.getElementById("login").classList.add("hidden");
+        document.getElementById("content").classList.remove("hidden");
+      } else {
+        alert("Parolă greșită 😔");
+      }
+    }
+  </script>
+
+</body>
+</html>

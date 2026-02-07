@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: radial-gradient(circle at top, #3b0014, #000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Georgia", serif;
+  color: #fff;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.65);
+  padding: 40px 50px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(255, 77, 109, 0.35);
+  animation: fadeIn 1.8s ease;
+  max-width: 420px;
+}
+
+h1 {
+  color: #ff4d6d;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: #ffd6e0;
+}
+
+input {
+  padding: 10px;
+  width: 80%;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 22px;
+  border-radius: 20px;
+  border: none;
+  background: #ff4d6d;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.qr-box {
+  background: #fff;
+  padding: 15px;
+  border-radius: 14px;
+  display: inline-block;
+  box-shadow: 0 0 25px rgba(255, 77, 109, 0.5);
+  margin-top: 15px;
+}
+
+.qr-box img {
+  width: 220px;
+  height: 220px;
+}
+
+.footer {
+  margin-top: 25px;
+  font-size: 16px;
+  color: #ffb3c6;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
